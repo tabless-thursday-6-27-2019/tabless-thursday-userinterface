@@ -3,6 +3,23 @@
 // Primary yellow color
 @primary: #E4BE4D;
 
+// Button mixins
+.solid-btn {
+    padding: 5px 15px;
+    margin: 0 15px;
+    border: 2px solid @primary;
+    border-radius: 50px;
+    color: white;
+    background-color: @primary;
+}
+.transparent-btn {
+    padding: 5px 15px;
+    margin: 0 15px;
+    border: 2px solid @primary;
+    border-radius: 50px;
+    color: @primary;
+}
+
 /* Navigation */
 .top-nav-wrap {
     background-color: @dark-bg;
@@ -10,31 +27,43 @@
     display: flex;
     align-items: center;
     ul.nav {
-        .nav-item a {
-            padding: 5px 15px;
-            margin: 0 15px;
-            border: 2px solid @primary;
-            border-radius: 100px;
-        }
         .log-in {
-            color: @primary;
+            .transparent-btn();
         }
         .sign-up {
-            color: white;
-            background-color: @primary;
+            .solid-btn();
         }
     }
 }
 
 .hero-cta {
-    background-image: url('../img/home-img.jpg');
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/home-img.jpg');
     background-size: cover;
-    height: 100%;
+    height: 100vh; // Set container height to 100% of viewport height
+    display: flex;
     .jumbotron {
         background: transparent;
+        width: 50%;
+        margin: auto;
+        h1 {
+            font-weight: bold;
+            color: white;
+        }
+        p.lead {
+            color: @primary;
+            font-size: 2em;
+        }
     }
     .cta-links {
-        margin-top: 100px;
+        margin-top: 150px;
+        text-align: center;
+        a {
+            .solid-btn();
+            text-decoration: none;
+        }
+        .sign-up {
+            color: @dark-bg;
+        }
     }
 }
 
