@@ -5,3 +5,27 @@
   display: flex;
   align-items: center;
 }
+.hero-cta {
+  background-image: url('../img/home-img.jpg');
+  background-size: cover;
+  height: 100%;
+}
+.hero-cta .jumbotron {
+  background: transparent;
+}
+.hero-cta .cta-links {
+  margin-top: 100px;
+}
+/* Footer */
+footer {
+  background-color: #333334;
+  color: white;
+}
+footer .container {
+  padding: 100px 0;
+}
+footer span {
+  display: block;
+  text-align: center;
+  padding: 25px 0;
+}
