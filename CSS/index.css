@@ -5,6 +5,19 @@
   display: flex;
   align-items: center;
 }
+.top-nav-wrap ul.nav .nav-item a {
+  padding: 5px 15px;
+  margin: 0 15px;
+  border: 2px solid #E4BE4D;
+  border-radius: 100px;
+}
+.top-nav-wrap ul.nav .log-in {
+  color: #E4BE4D;
+}
+.top-nav-wrap ul.nav .sign-up {
+  color: white;
+  background-color: #E4BE4D;
+}
 .hero-cta {
   background-image: url('../img/home-img.jpg');
   background-size: cover;
@@ -15,6 +28,11 @@
 }
 .hero-cta .cta-links {
   margin-top: 100px;
+}
+/* Section styles */
+.dark-section {
+  background-color: #333334;
+  color: #E4BE4D;
 }
 /* Footer */
 footer {

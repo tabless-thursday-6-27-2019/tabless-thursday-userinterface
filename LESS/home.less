@@ -1,5 +1,7 @@
 // Primary Dark background
 @dark-bg: #333334;
+// Primary yellow color
+@primary: #E4BE4D;
 
 /* Navigation */
 .top-nav-wrap {
@@ -7,6 +9,21 @@
     height: 100px;
     display: flex;
     align-items: center;
+    ul.nav {
+        .nav-item a {
+            padding: 5px 15px;
+            margin: 0 15px;
+            border: 2px solid @primary;
+            border-radius: 100px;
+        }
+        .log-in {
+            color: @primary;
+        }
+        .sign-up {
+            color: white;
+            background-color: @primary;
+        }
+    }
 }
 
 .hero-cta {
@@ -19,6 +36,12 @@
     .cta-links {
         margin-top: 100px;
     }
+}
+
+/* Section styles */
+.dark-section {
+    background-color: @dark-bg;
+    color: @primary;
 }
 
 /* Footer */
