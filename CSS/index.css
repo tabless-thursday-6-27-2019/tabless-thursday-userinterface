@@ -52,15 +52,27 @@
 section {
   padding: 100px 0;
 }
+section h2 {
+  font-size: 60px;
+}
 .dark-section {
   background-color: #333334;
   color: #E4BE4D;
+}
+.section-content p {
+  font-size: 24px;
 }
 #what-is-it .section-content {
   margin-top: 100px;
 }
 #see-it-in-action h2 {
   margin-bottom: 50px;
+}
+#pricing .row {
+  margin-top: 75px;
+}
+#pricing h3 {
+  font-size: 42px;
 }
 /* Footer */
 footer {
