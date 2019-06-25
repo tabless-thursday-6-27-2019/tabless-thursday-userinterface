@@ -1,0 +1,143 @@
+.solid-btn {
+  padding: 5px 15px;
+  margin: 0 15px;
+  border: 2px solid #E4BE4D;
+  border-radius: 50px;
+  color: white;
+  background-color: #E4BE4D;
+}
+.transparent-btn {
+  padding: 5px 15px;
+  margin: 0 15px;
+  border: 2px solid #E4BE4D;
+  border-radius: 50px;
+  color: #E4BE4D;
+}
+.hero-cta {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/home-img.jpg');
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+}
+.hero-cta .jumbotron {
+  background: transparent;
+  width: 50%;
+  margin: auto;
+}
+.hero-cta .jumbotron h1 {
+  font-weight: bold;
+  color: white;
+}
+.hero-cta .jumbotron p.lead {
+  color: #E4BE4D;
+  font-size: 2em;
+}
+.hero-cta .cta-links {
+  margin-top: 150px;
+  text-align: center;
+}
+.hero-cta .cta-links a {
+  padding: 5px 15px;
+  margin: 0 15px;
+  border: 2px solid #E4BE4D;
+  border-radius: 50px;
+  color: white;
+  background-color: #E4BE4D;
+  text-decoration: none;
+}
+.hero-cta .cta-links .sign-up {
+  color: #333334;
+}
+/* Section styles */
+section {
+  padding: 100px 0;
+}
+.dark-section {
+  background-color: #333334;
+  color: #E4BE4D;
+}
+.report {
+  font-family: "Helvetica Neue";
+  font-size: 60px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding-bottom: 4%;
+}
+.reviewers {
+  align-content: center;
+  height: 260px;
+  width: 260px;
+  background-color: #E4BE4D;
+  border-radius: 50%;
+  padding: 2.2%;
+}
+.rev-text {
+  text-align: left;
+  width: 280px;
+  padding-top: 16%;
+  color: #FFFFFF;
+  font-family: "Open Sans";
+  font-size: 20px;
+  letter-spacing: 0.17px;
+  line-height: 27px;
+}
+.rev-name {
+  padding-top: 8%;
+  width: 280px;
+  color: #FFFFFF;
+  text-align: right;
+  font-family: "Open Sans";
+  font-size: 16px;
+  font-style: italic;
+  letter-spacing: 0.13px;
+  line-height: 22px;
+}
+/* Footer */
+.logo {
+  width: 190px;
+  height: 270px;
+}
+footer {
+  background-color: #333334;
+  color: white;
+}
+footer .container {
+  padding: 100px 0;
+}
+footer span {
+  display: block;
+  text-align: center;
+  padding: 25px 0;
+}
+.foot-nav {
+  padding-top: 12%;
+  float: right;
+  text-align: center;
+}
+.list {
+  font-size: 1.2rem;
+}
+/* Navigation */
+.top-nav-wrap {
+  background-color: rgba(51, 51, 52, 0.8);
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.top-nav-wrap ul.nav .log-in {
+  padding: 5px 15px;
+  margin: 0 15px;
+  border: 2px solid #E4BE4D;
+  border-radius: 50px;
+  color: #E4BE4D;
+}
+.top-nav-wrap ul.nav .sign-up {
+  padding: 5px 15px;
+  margin: 0 15px;
+  border: 2px solid #E4BE4D;
+  border-radius: 50px;
+  color: white;
+  background-color: #E4BE4D;
+}
