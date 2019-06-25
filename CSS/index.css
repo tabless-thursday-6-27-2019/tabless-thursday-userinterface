@@ -13,6 +13,16 @@
   border-radius: 50px;
   color: #E4BE4D;
 }
+/* Big T Mixin */
+.big-t {
+  content: '';
+  background-image: url('../img/Big-T.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1050px;
+  height: 1200px;
+  position: absolute;
+}
 .hero-cta {
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/home-img.jpg');
   background-size: cover;
@@ -50,6 +60,7 @@
 }
 /* Section styles */
 section {
+  position: relative;
   padding: 100px 0;
 }
 section h2 {
@@ -57,22 +68,52 @@ section h2 {
 }
 .dark-section {
   background-color: #333334;
-  color: #E4BE4D;
+  color: white;
 }
 .section-content p {
   font-size: 24px;
 }
+#what-is-it {
+  padding: 250px 0;
+  overflow: hidden;
+}
 #what-is-it .section-content {
   margin-top: 100px;
 }
+#what-is-it::before {
+  content: '';
+  background-image: url('../img/Big-T.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1050px;
+  height: 1200px;
+  position: absolute;
+  top: 0;
+  left: -200px;
+}
 #see-it-in-action h2 {
   margin-bottom: 50px;
+}
+#pricing {
+  overflow: hidden;
+  /* Big t */
 }
 #pricing .row {
   margin-top: 75px;
 }
 #pricing h3 {
   font-size: 42px;
+}
+#pricing::before {
+  content: '';
+  background-image: url('../img/Big-T.svg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 1050px;
+  height: 1200px;
+  position: absolute;
+  top: -50px;
+  right: -100px;
 }
 /* Footer */
 footer {
