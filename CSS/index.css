@@ -56,6 +56,11 @@ section {
   background-color: #333334;
   color: #E4BE4D;
 }
+.reviewers {
+  height: 260px;
+  width: 260px;
+  background-color: #E4BE4D;
+}
 /* Footer */
 footer {
   background-color: #333334;
