@@ -1,3 +1,93 @@
-body {
-    background: red;
+// Primary Dark background
+@dark-bg: #333334;
+// Primary yellow color
+@primary: #E4BE4D;
+
+// Button mixins
+.solid-btn {
+    padding: 5px 15px;
+    margin: 0 15px;
+    border: 2px solid @primary;
+    border-radius: 50px;
+    color: white;
+    background-color: @primary;
+}
+.transparent-btn {
+    padding: 5px 15px;
+    margin: 0 15px;
+    border: 2px solid @primary;
+    border-radius: 50px;
+    color: @primary;
+}
+
+.hero-cta {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../img/home-img.jpg');
+    background-size: cover;
+    height: 100vh; // Set container height to 100% of viewport height
+    display: flex;
+    .jumbotron {
+        background: transparent;
+        width: 50%;
+        margin: auto;
+        h1 {
+            font-weight: bold;
+            color: white;
+        }
+        p.lead {
+            color: @primary;
+            font-size: 2em;
+        }
+    }
+    .cta-links {
+        margin-top: 150px;
+        text-align: center;
+        a {
+            .solid-btn();
+            text-decoration: none;
+        }
+        .sign-up {
+            color: @dark-bg;
+        }
+    }
+}
+
+/* Section styles */
+section {
+    padding: 100px 0;
+}
+.dark-section {
+    background-color: @dark-bg;
+    color: @primary;
+}
+
+// What is it styles
+#what-is-it {
+    .section-content {
+        margin-top: 100px;
+    }
+}
+
+// See it in action styles
+#see-it-in-action {
+    h2 {
+        margin-bottom: 50px;
+    }
+}
+
+// What they're saying
+
+// Pricing styles
+
+/* Footer */
+footer {
+    background-color: @dark-bg;
+    color: white;
+    .container {
+        padding: 100px 0;
+    }
+    span {
+        display: block;
+        text-align: center;
+        padding: 25px 0;
+    }
 }
