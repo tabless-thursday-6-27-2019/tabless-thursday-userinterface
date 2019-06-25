@@ -128,6 +128,25 @@ footer span {
   text-align: center;
   padding: 25px 0;
 }
+.hero-about {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../img/teamwork.jpg');
+  background-size: cover;
+  background-position: 50% 40%;
+  height: 75vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-about .jumbotron {
+  color: white;
+  background-color: transparent;
+}
+#team-members .row {
+  padding: 30px 0;
+}
+#team-members h3 {
+  text-align: center;
+}
 /* Navigation */
 .top-nav-wrap {
   background-color: rgba(51, 51, 52, 0.8);
