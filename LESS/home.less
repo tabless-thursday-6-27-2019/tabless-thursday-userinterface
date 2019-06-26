@@ -3,10 +3,12 @@
 // Primary yellow color
 @primary: #E4BE4D;
 
+// Media query variable for small screen sizes
+@small: ~'(max-width: 575px)';
+
 // Button mixins
 .solid-btn {
     padding: 14px 55px;
-    margin: 0 15px;
     border: 2px solid @primary;
     border-radius: 50px;
     color: white;
@@ -15,13 +17,23 @@
     background-color: @primary;
 }
 .transparent-btn {
-    padding: 5px 15px;
-    margin: 0 15px;
+    padding: 14px 55px;
     border: 2px solid @primary;
     border-radius: 50px;
     color: @primary;
     font-size: 28px;
     font-weight: 500;
+}
+.animate-btn {
+    transition: 0.3s all ease-in-out;
+    position: relative;
+    &:hover {
+        background-color: transparent;
+        transform: translateY(-6px);
+        box-shadow: 6px 9px black;
+        color: @primary !important;
+        border-color: black;
+    }
 }
 /* Big T Mixin */
 .big-t {
@@ -59,12 +71,19 @@
         margin-bottom: 100px;
         margin-left: auto;
         margin-right: auto;
-        a {
-            .solid-btn();
-            text-decoration: none;
+        .download {
+            .transparent-btn();
         }
         .sign-up {
-            color: @dark-bg;
+            .solid-btn();
+        }
+        a {
+            .animate-btn();
+            text-decoration: none;
+            margin: 15px;
+        }
+        .sign-up {
+            // color: @dark-bg;
         }
     }
 }
