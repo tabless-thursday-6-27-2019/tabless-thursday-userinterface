@@ -21,55 +21,91 @@
   }
 }
 
-.container {
+.tabs {
+  border-bottom: 1px solid lightgrey;
   display: flex;
-  flex-direction: column;
-  max-width: 100%;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  width: 100%;
+  height: 47px;
+  background-color: #fff;
 }
 
-.foot-container {
+.tabs .teamGroups {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+}
+.tabs .teamGroups .title {
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: bold;
+}
+.tabs .teamGroups .tab {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+  color: #E4BE4D;
+  background-color: @dark-bg;
+  margin: 0 5px;
+  padding: 2px 10px;
+  font-size: 12px;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.tabs .teamGroups .tab:hover {
+  text-decoration: underline;
+}
+.tabs .teamGroups .active-tab {
   background-color: @dark-bg;
   color: #E4BE4D;
+  border: 2px solid #333;
+}
+.cards-container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: none;
+  flex-direction: row;
+  width: 100%;
+  margin-top: 16px;
+  flex-wrap: wrap;
 }
 
-.meet-team{
-  font-family: "Open Sans";
-  text-align: center;
-  padding-bottom: 5%;
-  color: #E4BE4D;
+.cards-container .card {
+  border-bottom: 1px solid lightgrey;
+  display: flex;
+  justify-content: space-between;
+  align-items: none;
+  flex-direction: column;
+  background-color: #fff;
+  width: 380px;
+  margin-bottom: 16px;
+  padding: 24px;
 }
 
-.member {
-  font-family: "Open Sans";
-  color: #E4BE4D;
-  width: 200px;
-  text-align: center;
-
+.cards-container .card .article {
+  display: flex;
+  justify-content: none;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 15px;
 }
-
-.title {
-  font-family: "Open Sans";
-  font-size: 18px;
+.cards-container .card .article .img-container {
+  padding-right: 10px;
+  border-right: 1px solid lightgrey;
+  height: 40px;
 }
-
-.face {
-  width: 170px;
-  height: 170px;
-  background-color: #E4BE4D;
-  border-radius: 50%;
-  padding: 1%;
+.cards-container .card .article .img-container img {
+  width: 40px;
 }
-
-.face-single {
-  width: 170px;
-  height: 170px;
-  background-color: #E4BE4D;
-  border-radius: 50%;
-  padding: .5%;
-}
-
-.name{
-  font-size: 22px;
+.cards-container .card .article span {
+  padding-left: 10px;
+  font-size: 12px;
+  letter-spacing: 1px;
   font-weight: bold;
 }
 
@@ -105,27 +141,4 @@ footer {
 
 .copyright {
   font-size: 12px;
-}
-
-/* Tabs */
-.tabContainer {
-  max-width: 100%;
-  height: auto;
-}
-.tabContainer .buttonContainer {
-  width: auto;
-  height: 100%;
-  display: flex;
-  justify-content: space-between;
-  float: center;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 10px;
-  font-family: sans-serif;
-  font-size: 16px;
-  background-color: @dark-bg;
-}
-.tabContainer .buttonContainer button:hover {
-  background-color: #E4BE4D;
 }

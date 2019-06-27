@@ -50,95 +50,95 @@
       <h1>About Us</h1>
     </div>
   </div>
-</body>
+
 
 <!-- Team members section -->
-<section class="container">
+<div class="tabs">
+  <div class="teamGroups">
+    <span class="title">MEET THE TEAM!:</span>
+    <div data-tab="all" class= "tab active-tab">All Members</div>
+    <div data-tab="leader" class= "tab">Team Leader</div>
+    <div data-tab="ui" class= "tab">Web UI Developer</div>
+    <div data-tab="ux" class= "tab">Web UX Developer</div>
+    <div data-tab="front" class= "tab">Front End Architect</div>
+    <div data-tab="back" class= "tab">Back End Architect</div>
+  </div>
+</div>
 
-  <div class="meet-team">
-    <h2>Meet the Team!</h2>
+<div class="cards-container">
+
+  <div class="card" data-tab="leader">
+    <div class="article">
+    <div class="img-container">
+      <img src="./img/John.png" />
+    </div>
+    <div class="name">John O'Rourke</div>
+    <span>Team Leader</span>
+    </div>
   </div>
 
-  <div class= "tabContainer">
-      <div class="buttonContainer">
-        <button>All Members</button>
-        <button>Team Lead</button>
-        <button>WEB UI</button>
-        <button>WEB UX</button>
-        <button>Front End</button>
-        <button>Back End</button>
+  <div class="card" data-tab="ui">
+    <div class="article">
+    <div class="img-container">
+      <img src="./img/Matt.png" />
       </div>
-    
-      <div class="tabPanel">Tab 1:Content</div>
-      <div class="tabPanel">Tab 2:Content</div>
-      <div class="tabPanel">Tab 3:Content</div>
-      <div class="tabPanel">Tab 4:Content</div>
-      <div class="tabPanel">Tab 5:Content</div>
-      <div class="tabPanel">Tab 6:Content</div>
-    
-    </div>
-
-    <div class="row">
-    <div class="member col-12">
-        <div class="img-container">
-            <img class="face-single" src="./img/John.png">
-          </div>
-      <div class="name">John O'Rourke</div>
-      <span class="title">Team Leader</span>
-    </div>
-   
-
-    <div class="member col-6">
-        <div class="img-container">
-            <img class="face" src="./img/Matt.png">
-          </div>
-        <div class="name">Matt Herich</div>
-        <span class="title">WEB UI Developer I</span>
-      </div>
-
-    <div class="member col-6"> 
-        <div class="img-container">
-            <img class="face" src="./img/Daniel.png">
-          </div>
-          <div class="name">Daniel Kim</div>
-          <span class="title">WEB UI Developer II</span>
-        </div>
-
-    <div class="member col-12">
-        <div class="img-container">
-            <img class="face-single" src="./img/Zabdiel.png">
-          </div>
-      <div class="name">Zabdiel Rosario</div>
-      <span class="title">UX Designer</span>
-    </div>
-
-    <div class="member col-6">
-        <div class="img-container">
-            <img class="face" src="./img/Joel.png">
-          </div>
-        <div class="name">Joel Perez</div>
-        <span class="title">Front End Architect I</span>
-        </div>
-
-    <div class="member col-6">
-        <div class="img-container">
-            <img class="face" src="./img/Micah.png">
-            </div>
-        <div class="name">Micah Jones</div>
-        <span class="title">Front End Architect II</span>
-            </div>
-
-    <div class="member col-12">
-        <div class="img-container">
-            <img class="face-single" src="./img/Victor.png">
-          </div>
-      <div class="name">Victor Nguyen</div>
-      <span class="title">Back End Architect I</span>
-    </div>
-    
-    </div>
+      <div class="name">Matt Herich</div>
+      <span>WEB UI Developer I</span>
+    </div>  
   </div>
-</section>
+
+  <div class="card" data-tab="ui">
+    <div class="article">
+    <div class="img-container">
+      <img src="./img/Daniel.png" />
+    </div>
+    <div class="name">Daniel Kim</>
+      <span>WEB UI Developer II</span>
+    </div>  
+  </div>
+
+  <div class="card" data-tab="ux">
+    <div class="article">
+    <div class="img-container">
+      <img src="./img/Zabdiel.png" />
+    </div>
+    <div class="name">Zabdiel Rosario</div>
+      <span>UX Designer</span>
+    </div>  
+  </div>
+
+  <div class="card" data-tab="front">
+    <div class="article">
+    <div class="img-container">
+      <img src="./img/Joel.png" />
+    </div>
+    <div class="name">Joel Perez</div>
+      <span>Front End Architect I</span>
+    </div>  
+  </div>  
+
+  <div class="card" data-tab="front">
+    <div class="article">
+    <div class="img-container">
+      <img src="./img/Micah.png" />
+    </div>
+    <div class="name">Micah Jones</div>
+      <span>Front End Archiect II</span>
+    </div>  
+  </div>  
+
+  <div class="card" data-tab="baack">
+    <div class="article">
+    <div class="img-container">
+      <img src="./img/Victor.png" />
+    </div>
+    <div class="name">Victor Nguyen</div>
+      <span>Back End Architect</span>
+    </div>  
+  </div>  
+
+</div>
+
 
     <footer>
         <div class="foot-container">
@@ -160,5 +160,7 @@
         </div>
         <span class="copyright">Tabless Thursdays 2019 All rights reserved</span>
       </footer>
+
+  </body>      
 
 </html>
