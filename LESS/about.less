@@ -24,6 +24,7 @@
 .container {
   display: flex;
   flex-direction: column;
+  max-width: 100%;
 }
 
 .foot-container {
@@ -32,27 +33,44 @@
 }
 
 .meet-team{
-  background-color: @dark-bg;
+  font-family: "Open Sans";
+  text-align: center;
+  padding-bottom: 5%;
   color: #E4BE4D;
 }
 
 .member {
-  background-color: @dark-bg;
-  color: white;
-  width: 250px;
+  font-family: "Open Sans";
+  color: #E4BE4D;
+  width: 200px;
   text-align: center;
 
 }
 
 .title {
-  background-color: @dark-bg;
-  color: white;
+  font-family: "Open Sans";
+  font-size: 18px;
 }
 
 .face {
-  width: 165px;
-  height: 165px;
+  width: 170px;
+  height: 170px;
+  background-color: #E4BE4D;
   border-radius: 50%;
+  padding: 1%;
+}
+
+.face-single {
+  width: 170px;
+  height: 170px;
+  background-color: #E4BE4D;
+  border-radius: 50%;
+  padding: .5%;
+}
+
+.name{
+  font-size: 22px;
+  font-weight: bold;
 }
 
 /* Footer */
@@ -87,4 +105,27 @@ footer {
 
 .copyright {
   font-size: 12px;
+}
+
+/* Tabs */
+.tabContainer {
+  max-width: 100%;
+  height: auto;
+}
+.tabContainer .buttonContainer {
+  width: auto;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  float: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 10px;
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: @dark-bg;
+}
+.tabContainer .buttonContainer button:hover {
+  background-color: #E4BE4D;
 }
