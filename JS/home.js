@@ -19,5 +19,8 @@ window.addEventListener('load', () => {
         }
     })
 
+    document.querySelector('.carousel-item img').addEventListener('dragstart', e => {
+        e.preventDefault()
+    })
 
 })
