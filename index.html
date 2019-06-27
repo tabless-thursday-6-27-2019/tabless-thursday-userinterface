@@ -15,9 +15,9 @@
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
     integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
+    crossorigin="anonymous"></script> -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
     integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
@@ -30,14 +30,14 @@
 <body>
   <div class="top-nav-wrap">
     <div class="navigation container">
-      <nav class="navbar">
-        <a class="navbar-brand" href="#"><img src="./img/logo.png" alt="Tabless Thursdays Logo"></a>
-        <ul class="nav justify-content-end">
+      <nav class="navbar navbar-expand">
+        <a class="navbar-brand" href="/"><img src="./img/logo.png" alt="Tabless Thursdays Logo"></a>
+        <ul class="nav">
           <li class="nav-item">
-            <a class="log-in nav-link" href="#">Log In</a>
+            <a class="log-in nav-link" href="https://tabless-thursday-fe.netlify.com/">Log In</a>
           </li>
           <li class="nav-item">
-            <a class="sign-up nav-link" href="#">Sign Up</a>
+            <a class="sign-up nav-link" href="https://tabless-thursday-fe.netlify.com/signup">Sign Up</a>
           </li>
         </ul>
       </nav>
@@ -78,16 +78,16 @@
   <section id="see-it-in-action">
     <div class="container">
       <h2 class="text-right">See it in action!</h2>
-      <div id="carouselExampleSlidesOnly" class="carousel slide" data-ride="carousel">
+      <div class="carousel slide" data-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img class="d-block w-100" src="./img/home-screen.png" alt="First slide">
+            <img class="d-block w-90" src="./img/carousel/Page 1.jpg" alt="First slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="./img/home-screen.png" alt="Second slide">
+            <img class="d-block w-90" src="./img/carousel/Page 2.jpg" alt="Second slide">
           </div>
           <div class="carousel-item">
-            <img class="d-block w-100" src="./img/home-screen.png" alt="Third slide">
+            <img class="d-block w-90" src="./img/carousel/Page 3.jpg" alt="Third slide">
           </div>
         </div>
       </div>
@@ -99,17 +99,17 @@
     <div class="container">
       <h2 class="report">What they're saying</h2>
     <div class= "row">
-    <div class="rev-content col">
+    <div class="rev-content col-md-4 col-sm-12">
       <img class="reviewers" src="./img/Reviewer 1.png" alt="first reviewer">
       <p class="rev-text">Since Tabless the best testimonials paint a picture with words so readers can learn exactly what the value of making a purchase from you would be.</p>
       <p class="rev-name">Javi- Graphic Designer</p>
     </div>
-    <div class="rev-content col">
+    <div class="rev-content col-md-4 col-sm-12">
       <img class="reviewers" src="./img/Reviewer 2.png" alt="second reviewer">
       <p class="rev-text">Ever since I started using Tabless highlight testominals that align with specific features of your product or service -- and connect the dots for readers.</p>
       <p class="rev-name">May- Web Developer</p>
     </div>
-    <div class="rev-content col">
+    <div class="rev-content col-md-4 col-sm-12">
       <img class="reviewers" src="./img/Reviewer 3.png" alt="third reviewer">
       <p class="rev-text">Tabless has made my life so much easier your testominal page serves as a platform to show off how others have benefited from your product or service.</p>
       <p class="rev-name">Kevin- College Professor</p>
@@ -157,6 +157,27 @@
     </div>
   </section>
 
+  <section id="newsletter">
+    <div class="container">
+      <h2 class="text-white text-center">Join Our Newsletter!</h2>
+      <p class="text-white text-center">Get the latest updates on Tabless Thursday. We regularly release new features and by signing up to this newsletter you will be notified whenever we release a new update.</p>
+      <form class="form-inline justify-content-center">
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+      
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
+          </div>
+          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Email">
+        </div>
+      
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      </form>
+    </div>
+  </section>
+
   <!-- Footer - Daniel -->
   <footer>
     <div class="container">
@@ -165,14 +186,14 @@
           <img class="logo" src="./img/footer logo.png" alt="Tabless Thursday Logo">
         </div>
         <div class="foot-nav col">
-          <ul class="list">Home</ul>
-          <ul class="list">About Us</ul>
-          <ul class="list">Contact Us</ul>
+          <ul class="list"><a href="/">Home</a></ul>
+          <ul class="list"><a href="/about.html">About Us</a></ul>
+          <ul class="list"><a href="#">Contact Us</a></ul>
           </div>
          <div class="foot-nav col">
-            <ul class="list">Download</ul>
-            <ul class="list">Sign Up</ul>
-            <ul class="list">Sign In</ul>
+            <ul class="list"><a href="https://tabless-thursday-fe.netlify.com/">Download</a></ul>
+            <ul class="list"><a href="https://tabless-thursday-fe.netlify.com/signup">Sign Up</a></ul>
+            <ul class="list"><a href="https://tabless-thursday-fe.netlify.com/">Sign In</a></ul>
          </div> 
       </div>
     </div>
