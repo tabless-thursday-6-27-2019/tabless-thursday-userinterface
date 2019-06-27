@@ -29,7 +29,7 @@
     position: relative;
     &:hover {
         background-color: transparent;
-        transform: translateY(-6px);
+        transform: translate(-3px, -6px);
         box-shadow: 6px 9px black;
         color: @primary !important;
         border-color: black;
@@ -196,6 +196,21 @@ section {
     }
 }
 
+/* Newsletter Signup */
+section#newsletter {
+    background: darken(@dark-bg, 5%);
+    h3 {
+        margin-bottom: 50px;
+    }
+    button {
+        .transparent-btn();
+        .animate-btn();
+        border-color: #007bff;
+        color: white;
+        font-size: 18px;
+        padding: 10px 25px;
+    }
+}
 
 /* Footer */
 .logo {

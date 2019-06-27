@@ -30,9 +30,9 @@
 <body>
   <div class="top-nav-wrap">
     <div class="navigation container">
-      <nav class="navbar">
+      <nav class="navbar navbar-expand">
         <a class="navbar-brand" href="/"><img src="./img/logo.png" alt="Tabless Thursdays Logo"></a>
-        <ul class="nav justify-content-end">
+        <ul class="nav">
           <li class="nav-item">
             <a class="log-in nav-link" href="https://tabless-thursday-fe.netlify.com/">Log In</a>
           </li>
@@ -154,6 +154,26 @@
           </div>
         </div>
       </div>
+    </div>
+  </section>
+
+  <section id="newsletter">
+    <div class="container">
+      <h3 class="text-white text-center">Sign Up To Our Newsletter!</h3>
+      <form class="form-inline justify-content-center">
+        <label class="sr-only" for="inlineFormInputName2">Name</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+      
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Email</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <div class="input-group-prepend">
+            <div class="input-group-text">@</div>
+          </div>
+          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Email">
+        </div>
+      
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+      </form>
     </div>
   </section>
 
